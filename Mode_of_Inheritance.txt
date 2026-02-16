@@ -1,0 +1,12 @@
+What scope of attributes of parents will be inherited to child class and with what scope?
+
+	        Derived Class	Derived Class	Derived Class
+Base Class	Private Mode 	Protected Mode	Public Mode
+Private 	Not Inherited	Not Inherited	Not Inherited
+Protected	Private 	    Protected 	    Protected
+Public	    Private 	    Protected 	    Public   
+
+Think of Protected like it can be inherited in the derived class but act as private when we access through main class
+
+* When I am creating object the first thing that will happen is the base class ctor called and then derived class 
+* But In case of destruction the derived class dtor called first then base class just opposite as ctor calling mechanism
